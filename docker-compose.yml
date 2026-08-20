@@ -4,7 +4,5 @@ services:
     image: mockup-service-api
     container_name: mockup-service-api
     ports:
-      - "${PORT:-3000}:3000"
-    environment:
-      PORT: 3000
+      - "3000:3000"
     restart: unless-stopped

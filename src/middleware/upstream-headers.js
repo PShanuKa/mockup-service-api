@@ -5,12 +5,12 @@
  * and `transactionId` / `locus` are reflected in the response headers the way
  * the gateway does.
  *
- * Validation is opt-in: set STRICT_HEADERS=true to get 400/401 responses for
- * missing headers. Mock consumers usually want it off.
+ * Validation is opt-in: flip `config.strictHeaders` to get 400/401 responses
+ * for missing headers. Mock consumers usually want it off.
  */
-const REQUIRED_HEADERS = ['locus', 'sourceSystem', 'transactionId', 'performedBy'];
+import { config } from '../config.js';
 
-const strict = String(process.env.STRICT_HEADERS).toLowerCase() === 'true';
+const REQUIRED_HEADERS = ['locus', 'sourceSystem', 'transactionId', 'performedBy'];
 
 export function upstreamHeaders(req, res, next) {
   // Node lowercases incoming header names.
@@ -28,7 +28,7 @@ export function upstreamHeaders(req, res, next) {
   res.set('transactionId', req.upstream.transactionId);
   res.set('locus', req.upstream.locus);
 
-  if (strict) {
+  if (config.strictHeaders) {
     if (!req.upstream.authorization.startsWith('Bearer ')) {
       return res.status(401).json({
         code: '401',

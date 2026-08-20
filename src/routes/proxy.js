@@ -1,7 +1,5 @@
 import { Router } from 'express';
-
-const UPSTREAM_BASE_URL = process.env.UPSTREAM_BASE_URL || 'https://uat-api.combank.net';
-const UPSTREAM_TIMEOUT_MS = Number(process.env.UPSTREAM_TIMEOUT_MS || 30000);
+import { config } from '../config.js';
 
 // Headers the card-mgt gateway cares about. Everything else (host, connection,
 // accept-encoding …) is dropped so undici can set them itself.
@@ -20,11 +18,11 @@ const router = Router();
 
 /**
  * Passthrough to the real service: everything after /proxy is appended to
- * UPSTREAM_BASE_URL. Status, headers and body come back untouched so the real
+ * `config.upstream.baseUrl`. Status, headers and body come back untouched so the real
  * error payloads are visible.
  */
 router.all('/*splat', async (req, res) => {
-  const target = new URL(req.originalUrl.replace(/^\/proxy/, ''), UPSTREAM_BASE_URL);
+  const target = new URL(req.originalUrl.replace(/^\/proxy/, ''), config.upstream.baseUrl);
 
   const headers = {};
   for (const name of FORWARDED_HEADERS) {
@@ -39,7 +37,7 @@ router.all('/*splat', async (req, res) => {
       method: req.method,
       headers,
       body: ['GET', 'HEAD'].includes(req.method) ? undefined : JSON.stringify(req.body),
-      signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
+      signal: AbortSignal.timeout(config.upstream.timeoutMs),
     });
 
     const body = await upstream.text();

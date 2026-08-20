@@ -10,7 +10,7 @@ npm run dev     # nodemon, auto-reload
 npm start       # plain node
 ```
 
-Default port: `3000` (override with `PORT`).
+Runs on port `3000`. All settings are hardcoded in [src/config.js](src/config.js) — no env vars, no `.env` file.
 
 ## Endpoints
 
@@ -52,7 +52,8 @@ curl --request GET \
 **Headers** — all six upstream headers are accepted. `locus` drives the `locus`
 field in the body, and `transactionId` + `locus` are echoed back as response
 headers. Validation is off by default so mockups just work; set
-`STRICT_HEADERS=true` to get real `401` / `400` responses:
+`strictHeaders: true` in [src/config.js](src/config.js) to get real `401` / `400`
+responses:
 
 ```
 401 {"code":"401","message":"Missing or malformed Authorization header","transactionId":""}
@@ -81,6 +82,39 @@ real count is available in the non-standard `x-mock-total-items` header.
 
 112 card types total → `offset=1` gives 100 items, `offset=2` gives 12.
 
+## Passthrough proxy
+
+`/proxy/*` forwards a request to the real service (`config.upstream.baseUrl`,
+`https://uat-api.combank.net`) and returns its status, content-type and body
+**verbatim** — useful for comparing the mock against the real thing.
+
+```bash
+curl --request GET   --url 'http://localhost:3000/proxy/card-mgt/1.1.8/card-mgt/card-types?type=DC&cardUseType=P&fields=&offset=1&limit=100'   --header 'Authorization: Bearer <token>'   --header 'eventType: '   --header 'locus: SL'   --header 'performedBy: 1234'   --header 'sourceSystem: MyCombank'   --header 'transactionId: 123'
+```
+
+Forwarded headers: `authorization`, `eventType`, `locus`, `performedBy`,
+`sourceSystem`, `transactionId`, `content-type`, `accept`. Response carries
+`x-proxy-target` and `x-proxy-duration-ms`.
+
+If the upstream cannot be reached you get a `502` describing exactly what failed:
+
+```json
+{
+  "code": "502",
+  "message": "Upstream request failed",
+  "target": "https://uat-api.combank.net/card-mgt/1.1.8/card-mgt/card-types?...",
+  "durationMs": 10736,
+  "error": {
+    "name": "TypeError",
+    "message": "fetch failed",
+    "code": "UND_ERR_CONNECT_TIMEOUT",
+    "cause": "Connect Timeout Error (attempted address: uat-api.combank.net:443, timeout: 10000ms)"
+  }
+}
+```
+
+Target host and the 30s timeout live in [src/config.js](src/config.js).
+
 ## Docker
 
 ```bash
@@ -95,18 +129,21 @@ docker compose up --build       # add -d to detach
 docker compose down
 ```
 
-Host port override: `PORT=4000 docker compose up` maps `4000 -> 3000`.
 The image runs as the non-root `node` user and has a `/health` healthcheck.
+To publish on a different host port, edit the `ports` mapping in
+`docker-compose.yml`.
 
 ## Project layout
 
 ```
 src/
+  config.js                      all settings (port, strict headers, upstream)
   server.js                      entry point
   app.js                         express app factory + route mounting
   middleware/upstream-headers.js accepts/validates the card-mgt headers
   routes/hello.js                GET /api/hello
   routes/card-types.js           card-types endpoints
+  routes/proxy.js                /proxy/* passthrough to the real service
   utils/paginate.js              offset/limit pagination helper
   data/product-list.json         mock data (112 card types)
 ```
