@@ -1,5 +1,5 @@
-const DEFAULT_PAGE_SIZE = 100;
-const MAX_PAGE_SIZE = 500;
+const DEFAULT_LIMIT = 100;
+const MAX_LIMIT = 500;
 
 function toPositiveInt(value, fallback) {
   const n = Number.parseInt(value, 10);
@@ -7,31 +7,30 @@ function toPositiveInt(value, fallback) {
 }
 
 /**
- * Slice `items` into a page and build the `page` metadata block used by the
- * upstream card-type service.
+ * Slice `items` the way the card-mgt service does: `offset` is a 1-based page
+ * number and `limit` is the page size.
+ *
+ * The upstream `page` block always reports `totalItems: 0` — that quirk is
+ * reproduced here so clients see identical payloads. The real count is exposed
+ * separately as `realTotalItems` for the route to put in a debug header.
  */
-export function paginate(items, query = {}) {
-  const pageSizeRequested = Math.min(
-    toPositiveInt(query.pageSize, DEFAULT_PAGE_SIZE),
-    MAX_PAGE_SIZE
-  );
+export function paginate(items, { offset, limit } = {}) {
+  const pageSizeRequested = Math.min(toPositiveInt(limit, DEFAULT_LIMIT), MAX_LIMIT);
+  const currentPage = toPositiveInt(offset, 1);
   const totalItems = items.length;
-  const totalPages = Math.max(1, Math.ceil(totalItems / pageSizeRequested));
-  const currentPage = Math.min(toPositiveInt(query.page, 1), totalPages);
 
   const start = (currentPage - 1) * pageSizeRequested;
   const data = items.slice(start, start + pageSizeRequested);
 
   return {
     data,
+    realTotalItems: totalItems,
     page: {
       currentPage,
       pageSizeRequested,
       pageSize: data.length,
-      totalItems,
-      totalPages,
-      hasNextPage: currentPage < totalPages,
-      hasPreviousPage: currentPage > 1,
+      totalItems: 0,
+      totalPages: Math.ceil(totalItems / pageSizeRequested),
     },
   };
 }

@@ -2,122 +2,677 @@
   "locus": "SL",
   "type": "DC",
   "cardTypes": [
-    { "cardTypeCode": "ACL", "bin": "42168913", "description": "VISA DEBIT ACL", "contactless": "N" },
-    { "cardTypeCode": "CAI", "bin": "58888386", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "N" },
-    { "cardTypeCode": "CAT", "bin": "58888381", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "DBI", "bin": "42168920", "description": "DOTCOM BLUE INSTANT - OVER 16", "contactless": "Y" },
-    { "cardTypeCode": "DCY", "bin": "58888387", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "DOT", "bin": "58888382", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "DPI", "bin": "42168921", "description": "DOTCOM PINK INSTANT - OVER 16", "contactless": "Y" },
-    { "cardTypeCode": "FCY", "bin": "58888384", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "JCC", "bin": "35711140", "description": "JCB Virtual Card for Q+", "contactless": "N" },
-    { "cardTypeCode": "JPP", "bin": "35711189", "description": "JCB Debit Platinum Public", "contactless": "Y" },
-    { "cardTypeCode": "JPS", "bin": "35711190", "description": "JCB DEBIT PLATINUM STAFF", "contactless": "Y" },
-    { "cardTypeCode": "JSI", "bin": "35711117", "description": "JCB DEBIT STANDARD INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "JSP", "bin": "35711118", "description": "JCB DEBIT STANDARD PUBLIC", "contactless": "Y" },
-    { "cardTypeCode": "JSS", "bin": "35711119", "description": "JCB DEBIT STANDARD STAFF", "contactless": "Y" },
-    { "cardTypeCode": "LCL", "bin": "588883", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "MBO", "bin": "53592719", "description": "MC DEBIT INSTANT DOTCOM BLUE O16", "contactless": "Y" },
-    { "cardTypeCode": "MBU", "bin": "53592714", "description": "MC DEBIT INSTANT DOTCOM BLUE U16", "contactless": "Y" },
-    { "cardTypeCode": "MB2", "bin": "53592711", "description": "MASTERCARD DEBIT DOTCOM BLUE O16", "contactless": "Y" },
-    { "cardTypeCode": "MCB", "bin": "5359270000", "description": "MASTERCARD DEBIT BRAILLED", "contactless": "Y" },
-    { "cardTypeCode": "MCD", "bin": "5359270001", "description": "MASTERCARD DEBIT", "contactless": "Y" },
-    { "cardTypeCode": "MCF", "bin": "53592701", "description": "MASTERCARD FOREIGN", "contactless": "Y" },
-    { "cardTypeCode": "MCP", "bin": "53592720", "description": "MASTERCARD", "contactless": "Y" },
-    { "cardTypeCode": "MCU", "bin": "53592702", "description": "MASTERCARD URGENT", "contactless": "Y" },
-    { "cardTypeCode": "MDA", "bin": "53592708", "description": "MASTERCARD DEBIT DEBIT ANAGI", "contactless": "Y" },
-    { "cardTypeCode": "MDB", "bin": "53592706", "description": "MASTERCARD DEBIT DOTCOM BLUE U16", "contactless": "Y" },
-    { "cardTypeCode": "MDF", "bin": "53592704", "description": "MASTERCARD DEBIT FLASH", "contactless": "Y" },
-    { "cardTypeCode": "MDI", "bin": "53592703", "description": "MASTERCARD DEBIT INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "MDR", "bin": "53592709", "description": "MASTERCARD DEBIT REMITTANCE", "contactless": "Y" },
-    { "cardTypeCode": "MDV", "bin": "53592707", "description": "MASTERCARD DEBIT VIBE", "contactless": "Y" },
-    { "cardTypeCode": "MFI", "bin": "53592721", "description": "MASTERCARD FOREIGN INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "MIA", "bin": "53592716", "description": "MC DEBIT INSTANT ANAGI ANAGI", "contactless": "Y" },
-    { "cardTypeCode": "MIF", "bin": "53592712", "description": "MC DEBIT INSTANT FLASH", "contactless": "Y" },
-    { "cardTypeCode": "MIP", "bin": "53592718", "description": "MC DEBIT INSTANT DOTCOM PINK U16", "contactless": "Y" },
-    { "cardTypeCode": "MIR", "bin": "53592717", "description": "MC DEBIT INSTANT REMITTANCE", "contactless": "Y" },
-    { "cardTypeCode": "MIV", "bin": "53592715", "description": "MC DEBIT INSTANT VIBE", "contactless": "Y" },
-    { "cardTypeCode": "MPC", "bin": "55380601", "description": "MASTERCARD DEBIT CHIP & PIN", "contactless": "N" },
-    { "cardTypeCode": "MPD", "bin": "53592705", "description": "MASTERCARD DEBIT DOTCOM PINK O16", "contactless": "Y" },
-    { "cardTypeCode": "MPI", "bin": "55380600", "description": "PAYPASS DEBIT CHIP & PIN", "contactless": "Y" },
-    { "cardTypeCode": "MPO", "bin": "53592713", "description": "MC DEBIT INSTANT DOTCOM PINK O16", "contactless": "Y" },
-    { "cardTypeCode": "MPP", "bin": "55972805", "description": "MASTERCARD DEBIT PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "MPS", "bin": "5597280500", "description": "MASTERCARD DEBIT PLATINUM STAFF", "contactless": "Y" },
-    { "cardTypeCode": "MPU", "bin": "55380603", "description": "MASTERCARD DEBIT CHIP & PIN URGENT", "contactless": "N" },
-    { "cardTypeCode": "MP1", "bin": "55380602", "description": "MASTERCARD CHIP & PIN INSTANT", "contactless": "N" },
-    { "cardTypeCode": "MP2", "bin": "53592710", "description": "MASTERCARD DEBIT DOTCOM PINK U16", "contactless": "Y" },
-    { "cardTypeCode": "MRD", "bin": "55972800", "description": "MASTERCARD DEBIT RANSALU", "contactless": "Y" },
-    { "cardTypeCode": "MRI", "bin": "55972802", "description": "MASTERCARD RANSALU INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "MSE", "bin": "55972801", "description": "MASTERCARD DEBIT SME", "contactless": "Y" },
-    { "cardTypeCode": "MSI", "bin": "55972803", "description": "MASTERCARD DEBIT SME INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "MSP", "bin": "55972806", "description": "MASTERCARD DEBIT PLATINUM 2", "contactless": "Y" },
-    { "cardTypeCode": "PRI", "bin": "58888385", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "SPN", "bin": "58888383", "description": "COMMERCIAL BANK CEYLON ATM CARDS", "contactless": "" },
-    { "cardTypeCode": "UDC", "bin": "62917602", "description": "UNIONPAY DEBIT GOLD CONTACTLESS", "contactless": "Y" },
-    { "cardTypeCode": "UDG", "bin": "62917600", "description": "UNIONPAY DEBIT GOLD", "contactless": "N" },
-    { "cardTypeCode": "UGI", "bin": "62917601", "description": "UNIONPAY DEBIT GOLD INSTANT", "contactless": "N" },
-    { "cardTypeCode": "UIG", "bin": "62917603", "description": "UNIONPAY GOLD INSTANT CONTACTLESS", "contactless": "Y" },
-    { "cardTypeCode": "UIP", "bin": "62917703", "description": "UNIONPAY PLATINUM INSTANT CONTACTLESS", "contactless": "Y" },
-    { "cardTypeCode": "UPC", "bin": "62917702", "description": "UNIONPAY DEBIT PLATINUM CONTACTLESS", "contactless": "Y" },
-    { "cardTypeCode": "UPD", "bin": "62917700", "description": "UNIONPAY DEBIT PLATINUM", "contactless": "N" },
-    { "cardTypeCode": "UPI", "bin": "62917701", "description": "UNIONPAY DEBIT PLATINUM INSTANT", "contactless": "N" },
-    { "cardTypeCode": "UPS", "bin": "6291770200", "description": "UNIONPAY DEBIT PLATINUM CONTACTLESS STAF", "contactless": "Y" },
-    { "cardTypeCode": "VAC", "bin": "42168936", "description": "VISA DEBIT ACHIEVER INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "VAI", "bin": "42168907", "description": "VISA DEBIT CHIP ANAGI INS", "contactless": "Y" },
-    { "cardTypeCode": "VA1", "bin": "42168908", "description": "VISA DEBIT CHIP ANAGI 1", "contactless": "Y" },
-    { "cardTypeCode": "VA2", "bin": "42168911", "description": "VISA DEBIT CHIP ANAGI 2", "contactless": "Y" },
-    { "cardTypeCode": "VBA", "bin": "47667303", "description": "VISA BIZ CLUB - PREMIER", "contactless": "Y" },
-    { "cardTypeCode": "VBC", "bin": "45008906", "description": "VISA BIZ CLUB - SILVER", "contactless": "Y" },
-    { "cardTypeCode": "VBD", "bin": "45008907", "description": "VISA BIZ CLUB - GOLD", "contactless": "Y" },
-    { "cardTypeCode": "VBG", "bin": "45008903", "description": "VISA BIZ CLUB - GOLD", "contactless": "Y" },
-    { "cardTypeCode": "VBI", "bin": "42168922", "description": "DOTCOM BLUE INSTANT - BELOW 16", "contactless": "Y" },
-    { "cardTypeCode": "VBP", "bin": "47667302", "description": "VISA BIZ CLUB - PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VBS", "bin": "42168924", "description": "VISA BIZ CLUB - SILVER", "contactless": "Y" },
-    { "cardTypeCode": "VBT", "bin": "45008908", "description": "VISA BIZ CLUB - PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VDA", "bin": "42168935", "description": "VISA DEBIT ACHIEVER", "contactless": "Y" },
-    { "cardTypeCode": "VDB", "bin": "42168917", "description": "VISA DEBIT DOTCOM BLUE O16", "contactless": "Y" },
-    { "cardTypeCode": "VDD", "bin": "42168916", "description": "VISA DEBIT DOTCOM PINK O16", "contactless": "Y" },
-    { "cardTypeCode": "VDF", "bin": "42168925", "description": "VISA DEBIT FLASH", "contactless": "Y" },
-    { "cardTypeCode": "VDI", "bin": "42168926", "description": "VISA DIVISARU INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "VDJ", "bin": "42168928", "description": "VISA DEBIT JAT", "contactless": "Y" },
-    { "cardTypeCode": "VDP", "bin": "47667300", "description": "VISA DEBIT PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VDQ", "bin": "4216890000", "description": "VISA DEBIT CHIP Virtual Q+", "contactless": "Y" },
-    { "cardTypeCode": "VDS", "bin": "42168912", "description": "VISA DIVISARU", "contactless": "Y" },
-    { "cardTypeCode": "VDU", "bin": "42168931", "description": "VISA DEBIT ULTRATECH", "contactless": "Y" },
-    { "cardTypeCode": "VDV", "bin": "42168929", "description": "VISA DEBIT VIBE", "contactless": "Y" },
-    { "cardTypeCode": "VD5", "bin": "42168918", "description": "VISA DEBIT DOTCOM BLUE U16", "contactless": "Y" },
-    { "cardTypeCode": "VD6", "bin": "42168919", "description": "VISA DEBIT DOTCOM PINK U16", "contactless": "Y" },
-    { "cardTypeCode": "VEB", "bin": "46212103", "description": "BIZ CLUB - PREMIER", "contactless": "Y" },
-    { "cardTypeCode": "VFA", "bin": "42168906", "description": "VISA DEBIT CHIP ANAGI", "contactless": "Y" },
-    { "cardTypeCode": "VFD", "bin": "42168900", "description": "VISA DEBIT CHIP", "contactless": "Y" },
-    { "cardTypeCode": "VFF", "bin": "42168901", "description": "VISA DEBIT CHIP FOREIGN", "contactless": "Y" },
-    { "cardTypeCode": "VFG", "bin": "45008900", "description": "VISA FLAG DEBIT GOLD", "contactless": "" },
-    { "cardTypeCode": "VFI", "bin": "4216890343", "description": "VISA DEBIT CHIP INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "VFN", "bin": "42168934", "description": "VISA DEBIT CHIP FOREIGN INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "VFP", "bin": "47667306", "description": "VISA FOREIGN PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VFS", "bin": "4216890600", "description": "VISA DEBIT CHIP ANAGI STAFF", "contactless": "Y" },
-    { "cardTypeCode": "VFU", "bin": "42168902", "description": "VISA DEBIT CHIP URGENT", "contactless": "Y" },
-    { "cardTypeCode": "VF1", "bin": "42168904", "description": "VISA DEBIT CHIP 1", "contactless": "Y" },
-    { "cardTypeCode": "VF2", "bin": "42168905", "description": "VISA DEBIT CHIP 2", "contactless": "Y" },
-    { "cardTypeCode": "VF3", "bin": "42168910", "description": "VISA DEBIT CHIP 3", "contactless": "Y" },
-    { "cardTypeCode": "VGB", "bin": "46212101", "description": "BIZ CLUB - GOLD", "contactless": "Y" },
-    { "cardTypeCode": "VGE", "bin": "45008901", "description": "VISA SIGNATURE ELITE", "contactless": "Y" },
-    { "cardTypeCode": "VGP", "bin": "45008902", "description": "VISA GOLD ELITE PAYWAVE", "contactless": "Y" },
-    { "cardTypeCode": "VIF", "bin": "42168927", "description": "VISA DEBIT FLASH INSTANT", "contactless": "Y" },
-    { "cardTypeCode": "VIG", "bin": "45008904", "description": "INSEE GOLD", "contactless": "Y" },
-    { "cardTypeCode": "VIP", "bin": "47667304", "description": "VISA INSEE PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VI1", "bin": "42168932", "description": "VISA DEBIT CHIP INSTANT1", "contactless": "Y" },
-    { "cardTypeCode": "VI2", "bin": "42168933", "description": "VISA DEBIT CHIP INSTANT2", "contactless": "Y" },
-    { "cardTypeCode": "VI3", "bin": "4216890003", "description": "VISA DEBIT CHIP INSTANT NEW", "contactless": "Y" },
-    { "cardTypeCode": "VND", "bin": "42168915", "description": "VISA DEBIT NFC CLASSIC", "contactless": "Y" },
-    { "cardTypeCode": "VNP", "bin": "47667301", "description": "VISA DEBIT NFC PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VPB", "bin": "46212102", "description": "BIZ CLUB - PLATINUM", "contactless": "Y" },
-    { "cardTypeCode": "VPE", "bin": "47667305", "description": "VISA INSEE PLATINUM PLUS", "contactless": "Y" },
-    { "cardTypeCode": "VPI", "bin": "42168923", "description": "DOTCOM PINK INSTANT - BELOW 16", "contactless": "Y" },
-    { "cardTypeCode": "VPL", "bin": "45008905", "description": "VISA INSEE GOLD PLUS", "contactless": "Y" },
-    { "cardTypeCode": "VRI", "bin": "42168914", "description": "VISA DEBIT REMITTANCE INSTANCE", "contactless": "Y" },
-    { "cardTypeCode": "VTD", "bin": "46212100", "description": "VISA BUSINESS DEBIT", "contactless": "N" },
-    { "cardTypeCode": "VUD", "bin": "42168909", "description": "VISA DEBIT CHIP UDARA", "contactless": "Y" },
-    { "cardTypeCode": "VVI", "bin": "42168930", "description": "VISA DEBIT VIBE INSTANT", "contactless": "Y" }
+    {
+      "cardTypeCode": "ACL",
+      "bin": "42168913",
+      "description": "VISA DEBIT ACL",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "CAI",
+      "bin": "58888386",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "CAT",
+      "bin": "58888381",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "DBI",
+      "bin": "42168920",
+      "description": "DOTCOM BLUE INSTANT - OVER 16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "DCY",
+      "bin": "58888387",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "DOT",
+      "bin": "58888382",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "DPI",
+      "bin": "42168921",
+      "description": "DOTCOM PINK INSTANT - OVER 16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "FCY",
+      "bin": "58888384",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "JCC",
+      "bin": "35711140",
+      "description": "JCB Virtual Card for Q+",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "JPP",
+      "bin": "35711189",
+      "description": "JCB Debit Platinum Public",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "JPS",
+      "bin": "35711190",
+      "description": "JCB DEBIT PLATINUM STAFF",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "JSI",
+      "bin": "35711117",
+      "description": "JCB DEBIT STANDARD INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "JSP",
+      "bin": "35711118",
+      "description": "JCB DEBIT STANDARD PUBLIC",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "JSS",
+      "bin": "35711119",
+      "description": "JCB DEBIT STANDARD STAFF",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "LCL",
+      "bin": "588883",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "MBO",
+      "bin": "53592719",
+      "description": "MC DEBIT INSTANT DOTCOM BLUE O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MBU",
+      "bin": "53592714",
+      "description": "MC DEBIT INSTANT DOTCOM BLUE U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MB2",
+      "bin": "53592711",
+      "description": "MASTERCARD DEBIT DOTCOM BLUE O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MCD",
+      "bin": "53592700",
+      "description": "MASTERCARD DEBIT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MCF",
+      "bin": "53592701",
+      "description": "MASTERCARD FOREIGN",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MCP",
+      "bin": "53592720",
+      "description": "MASTERCARD",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MCU",
+      "bin": "53592702",
+      "description": "MASTERCARD URGENT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDA",
+      "bin": "53592708",
+      "description": "MASTERCARD DEBIT DEBIT ANAGI",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDB",
+      "bin": "53592706",
+      "description": "MASTERCARD DEBIT DOTCOM BLUE U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDF",
+      "bin": "53592704",
+      "description": "MASTERCARD DEBIT FLASH",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDI",
+      "bin": "53592703",
+      "description": "MASTERCARD DEBIT INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDR",
+      "bin": "53592709",
+      "description": "MASTERCARD DEBIT REMITTANCE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MDV",
+      "bin": "53592707",
+      "description": "MASTERCARD DEBIT VIBE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MFI",
+      "bin": "53592721",
+      "description": "MASTERCARD FOREIGN INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MIA",
+      "bin": "53592716",
+      "description": "MC DEBIT INSTANT ANAGI ANAGI",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MIF",
+      "bin": "53592712",
+      "description": "MC DEBIT INSTANT FLASH",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MIP",
+      "bin": "53592718",
+      "description": "MC DEBIT INSTANT DOTCOM PINK U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MIR",
+      "bin": "53592717",
+      "description": "MC DEBIT INSTANT REMITTANCE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MIV",
+      "bin": "53592715",
+      "description": "MC DEBIT INSTANT VIBE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MPC",
+      "bin": "55380601",
+      "description": "MASTERCARD DEBIT CHIP & PIN",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "MPD",
+      "bin": "53592705",
+      "description": "MASTERCARD DEBIT DOTCOM PINK O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MPI",
+      "bin": "55380600",
+      "description": "PAYPASS DEBIT CHIP & PIN",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MPO",
+      "bin": "53592713",
+      "description": "MC DEBIT INSTANT DOTCOM PINK O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MPP",
+      "bin": "55972805",
+      "description": "MASTERCARD DEBIT PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MPU",
+      "bin": "55380603",
+      "description": "MASTERCARD DEBIT CHIP & PIN URGENT",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "MP1",
+      "bin": "55380602",
+      "description": "MASTERCARD CHIP & PIN INSTANT",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "MP2",
+      "bin": "53592710",
+      "description": "MASTERCARD DEBIT DOTCOM PINK U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MRD",
+      "bin": "55972800",
+      "description": "MASTERCARD DEBIT RANSALU",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MRI",
+      "bin": "55972802",
+      "description": "MASTERCARD RANSALU INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MSE",
+      "bin": "55972801",
+      "description": "MASTERCARD DEBIT SME",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MSI",
+      "bin": "55972803",
+      "description": "MASTERCARD DEBIT SME INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "MSP",
+      "bin": "55972806",
+      "description": "MASTERCARD DEBIT PLATINUM 2",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "PRI",
+      "bin": "58888385",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "SPN",
+      "bin": "58888383",
+      "description": "COMMERCIAL BANK CEYLON ATM CARDS",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "UDC",
+      "bin": "62917602",
+      "description": "UNIONPAY DEBIT GOLD CONTACTLESS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "UDG",
+      "bin": "62917600",
+      "description": "UNIONPAY DEBIT GOLD",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "UGI",
+      "bin": "62917601",
+      "description": "UNIONPAY DEBIT GOLD INSTANT",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "UIG",
+      "bin": "62917603",
+      "description": "UNIONPAY GOLD INSTANT CONTACTLESS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "UIP",
+      "bin": "62917703",
+      "description": "UNIONPAY PLATINUM INSTANT CONTACTLESS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "UPC",
+      "bin": "62917702",
+      "description": "UNIONPAY DEBIT PLATINUM CONTACTLESS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "UPD",
+      "bin": "62917700",
+      "description": "UNIONPAY DEBIT PLATINUM",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "UPI",
+      "bin": "62917701",
+      "description": "UNIONPAY DEBIT PLATINUM INSTANT",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "VAC",
+      "bin": "42168936",
+      "description": "VISA DEBIT ACHIEVER INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VAI",
+      "bin": "42168907",
+      "description": "VISA DEBIT CHIP ANAGI INS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VA1",
+      "bin": "42168908",
+      "description": "VISA DEBIT CHIP ANAGI 1",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VA2",
+      "bin": "42168911",
+      "description": "VISA DEBIT CHIP ANAGI 2",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBA",
+      "bin": "47667303",
+      "description": "VISA BIZ CLUB - PREMIER",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBC",
+      "bin": "45008906",
+      "description": "VISA BIZ CLUB - SILVER",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBD",
+      "bin": "45008907",
+      "description": "VISA BIZ CLUB - GOLD",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBG",
+      "bin": "45008903",
+      "description": "VISA BIZ CLUB - GOLD",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBI",
+      "bin": "42168922",
+      "description": "DOTCOM BLUE INSTANT - BELOW 16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBP",
+      "bin": "47667302",
+      "description": "VISA BIZ CLUB - PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBS",
+      "bin": "42168924",
+      "description": "VISA BIZ CLUB - SILVER",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VBT",
+      "bin": "45008908",
+      "description": "VISA BIZ CLUB - PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDA",
+      "bin": "42168935",
+      "description": "VISA DEBIT ACHIEVER",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDB",
+      "bin": "42168917",
+      "description": "VISA DEBIT DOTCOM BLUE O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDD",
+      "bin": "42168916",
+      "description": "VISA DEBIT DOTCOM PINK O16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDF",
+      "bin": "42168925",
+      "description": "VISA DEBIT FLASH",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDI",
+      "bin": "42168926",
+      "description": "VISA DIVISARU INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDJ",
+      "bin": "42168928",
+      "description": "VISA DEBIT JAT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDP",
+      "bin": "47667300",
+      "description": "VISA DEBIT PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDS",
+      "bin": "42168912",
+      "description": "VISA DIVISARU",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDU",
+      "bin": "42168931",
+      "description": "VISA DEBIT ULTRATECH",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VDV",
+      "bin": "42168929",
+      "description": "VISA DEBIT VIBE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VD5",
+      "bin": "42168918",
+      "description": "VISA DEBIT DOTCOM BLUE U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VD6",
+      "bin": "42168919",
+      "description": "VISA DEBIT DOTCOM PINK U16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VEB",
+      "bin": "46212103",
+      "description": "BIZ CLUB - PREMIER",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFA",
+      "bin": "42168906",
+      "description": "VISA DEBIT CHIP ANAGI",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFD",
+      "bin": "42168900",
+      "description": "VISA DEBIT CHIP",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFF",
+      "bin": "42168901",
+      "description": "VISA DEBIT CHIP FOREIGN",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFG",
+      "bin": "45008900",
+      "description": "VISA FLAG DEBIT GOLD",
+      "contactless": ""
+    },
+    {
+      "cardTypeCode": "VFI",
+      "bin": "42168903",
+      "description": "VISA DEBIT CHIP INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFN",
+      "bin": "42168934",
+      "description": "VISA DEBIT CHIP FOREIGN INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFP",
+      "bin": "47667306",
+      "description": "VISA FOREIGN PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VFU",
+      "bin": "42168902",
+      "description": "VISA DEBIT CHIP URGENT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VF1",
+      "bin": "42168904",
+      "description": "VISA DEBIT CHIP 1",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VF2",
+      "bin": "42168905",
+      "description": "VISA DEBIT CHIP 2",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VF3",
+      "bin": "42168910",
+      "description": "VISA DEBIT CHIP 3",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VGB",
+      "bin": "46212101",
+      "description": "BIZ CLUB - GOLD",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VGE",
+      "bin": "45008901",
+      "description": "VISA SIGNATURE ELITE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VGP",
+      "bin": "45008902",
+      "description": "VISA GOLD ELITE PAYWAVE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VIF",
+      "bin": "42168927",
+      "description": "VISA DEBIT FLASH INSTANT",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VIG",
+      "bin": "45008904",
+      "description": "INSEE GOLD",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VIP",
+      "bin": "47667304",
+      "description": "VISA INSEE PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VI1",
+      "bin": "42168932",
+      "description": "VISA DEBIT CHIP INSTANT1",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VI2",
+      "bin": "42168933",
+      "description": "VISA DEBIT CHIP INSTANT2",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VI3",
+      "bin": "4216890003",
+      "description": "VISA DEBIT CHIP INSTANT NEW",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VND",
+      "bin": "42168915",
+      "description": "VISA DEBIT NFC CLASSIC",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VNP",
+      "bin": "47667301",
+      "description": "VISA DEBIT NFC PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VPB",
+      "bin": "46212102",
+      "description": "BIZ CLUB - PLATINUM",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VPE",
+      "bin": "47667305",
+      "description": "VISA INSEE PLATINUM PLUS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VPI",
+      "bin": "42168923",
+      "description": "DOTCOM PINK INSTANT - BELOW 16",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VPL",
+      "bin": "45008905",
+      "description": "VISA INSEE GOLD PLUS",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VRI",
+      "bin": "42168914",
+      "description": "VISA DEBIT REMITTANCE INSTANCE",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VTD",
+      "bin": "46212100",
+      "description": "VISA BUSINESS DEBIT",
+      "contactless": "N"
+    },
+    {
+      "cardTypeCode": "VUD",
+      "bin": "42168909",
+      "description": "VISA DEBIT CHIP UDARA",
+      "contactless": "Y"
+    },
+    {
+      "cardTypeCode": "VVI",
+      "bin": "42168930",
+      "description": "VISA DEBIT VIBE INSTANT",
+      "contactless": "Y"
+    }
   ]
 }
