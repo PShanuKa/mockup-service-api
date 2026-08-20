@@ -19,7 +19,7 @@ Runs on port `3000`. All settings are hardcoded in [src/config.js](src/config.js
 | GET    | `/health`                                     | `{ status, uptime }`                 |
 | GET    | `/api/hello`                                  | `{ message: "Hello, World!" }`       |
 | GET    | `/card-mgt/1.1.8/card-mgt/card-types`         | Card types, upstream response shape  |
-| GET    | `/card-mgt/1.1.8/card-mgt/card-types/:code`   | Single card type (mock-only extra)   |
+| GET    | `/card-mgt/1.1.8/card-mgt/card-types/:code`   | Single card type — `JCC` or `JCCDC`  |
 
 `/api/card-types` is a short alias for the same router.
 
@@ -43,7 +43,7 @@ curl --request GET \
 
 | Param         | Default | Behaviour                                                     |
 | ------------- | ------- | ------------------------------------------------------------- |
-| `type`        | `DC`    | Echoed back in the response; the data set does not change      |
+| `type`        | `DC`    | Echoed back, and appended to every `cardTypeCode` (`JCC` -> `JCCDC`) |
 | `cardUseType` | —       | Accepted, ignored (upstream returns the same list)             |
 | `fields`      | —       | Comma-separated projection, e.g. `fields=cardTypeCode,bin`     |
 | `offset`      | `1`     | 1-based page number → `page.currentPage`                       |
@@ -67,7 +67,7 @@ real count is available in the non-standard `x-mock-total-items` header.
 {
   "locus": "SL",
   "cardTypes": [
-    { "cardTypeCode": "ACL", "bin": "42168913", "description": "VISA DEBIT ACL", "contactless": "N" }
+    { "cardTypeCode": "ACLDC", "bin": "42168913", "description": "VISA DEBIT ACL", "contactless": "N" }
   ],
   "page": {
     "currentPage": 1,
@@ -79,6 +79,9 @@ real count is available in the non-standard `x-mock-total-items` header.
   "type": "DC"
 }
 ```
+
+`cardTypeCode` always comes back with the requested `type` appended, so
+`type=DC` yields `JCCDC` and `type=CC` yields `JCCCC`.
 
 112 card types total → `offset=1` gives 100 items, `offset=2` gives 12.
 
