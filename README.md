@@ -79,3 +79,20 @@ src/
 1. Drop the mock payload in `src/data/`.
 2. Create `src/routes/<name>.js` exporting an Express `Router`; use `paginate()` for list endpoints.
 3. Mount it in `src/app.js` with `app.use('/api', <name>Router)`.
+
+## Docker
+
+```bash
+docker build -t mockup-service-api .
+docker run --rm -p 3000:3000 mockup-service-api
+```
+
+Or with compose:
+
+```bash
+docker compose up --build       # add -d to detach
+docker compose down
+```
+
+Host port override: `PORT=4000 docker compose up` maps `4000 -> 3000`.
+The image runs as the non-root `node` user and has a `/health` healthcheck.
