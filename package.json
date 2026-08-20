@@ -1,0 +1,29 @@
+{
+  "name": "mockup-service-api",
+  "version": "1.0.0",
+  "description": "Small mock backend API for UI mockups",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PShanuKa/mockup-service-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/PShanuKa/mockup-service-api/issues"
+  },
+  "homepage": "https://github.com/PShanuKa/mockup-service-api#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
